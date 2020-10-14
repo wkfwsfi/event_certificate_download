@@ -9,7 +9,7 @@ def my_home():
 
 #----------------Searching the Participant detail--------------------
 def read_from_csv(data):
-    with open('./static/files/participant_list_out.csv', mode='r') as db_list:     ##--------Change the file name accordingly--------##
+    with open('./static/files/participant_list.csv', mode='r') as db_list:     ##--------Change the file name accordingly--------##
         reader = csv.reader(db_list)
         for row in reader:  
             if data in row: #checks the email id in the list
